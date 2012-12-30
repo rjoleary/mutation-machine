@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Mutation Machine</title>
+		<link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet"  type="text/css" />
+		<script src="script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="center">
+			<h1>Mutation Machine</h1>
+			
+			<noscript>Javascript is not enabled in your web browser.</noscript>
+			
+			<div class="column">
+				<h2>Desired Image</h2>
+				<canvas id="desired" class="organism" width="0" height="0">The canvas element is not supported by your web browser.</canvas>
+			</div><div class="column">
+				<h2>Evolving Image</h2>
+				<canvas id="evolving" class="organism" width="0" height="0">The canvas element is not supported by your web browser.</canvas>
+			</div>
+			
+			<h2>Controls</h2>
+			<input type="button" id="start" value="Start" onclick="StartMutate()" />
+			<input type="button" id="stop" value="Stop" onclick="StopMutate()" />
+			<input type="button" value="Reset DNA" onclick="ResetDNA()" />
+			<input type="button" value="Clean DNA" onclick="CleanDNA()" />
+			
+			<h2>DNA</h2>
+			Fitness: <span id="fitness">0.0</span>%
+			<br />
+			Generations: <span id="generations">0</span>
+			<textarea id="dna" class="dna" spellcheck="false"></textarea>
+			
+			<h2>Other Images</h2>
+			<input type="button" value="Frillmore" onclick="ChangeImage('frillmore.png')" />
+			<input type="button" value="Bubble Wrap" onclick="ChangeImage('bubble_wrap.png')" />
+			<input type="button" value="Parrot" onclick="ChangeImage('parrot.png')" />
+			<input type="button" value="Wicker" onclick="ChangeImage('wicker.png')" />
+			<input type="file" id="image-upload" />
+		</div>
+	</body>
+</html>
+
