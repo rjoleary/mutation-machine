@@ -8,8 +8,8 @@ var BASES = "ACGT";
 var BASE_VALUES = {A: 0, C: 1, G: 2, T: 3};
 var GENES_REGEX = /ATG(...)*?(TAA|TGA|TAG)/g;
 var DEFAULT_DNA = "ATGGATTCGGCTGTAAACGATACTCTACGGCAGTACTGA";
-var WIDTH = 50;
-var HEIGHT = 50;
+var WIDTH = 250;
+var HEIGHT = 250;
 
 
 window.onload = function ()
